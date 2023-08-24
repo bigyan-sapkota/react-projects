@@ -7,6 +7,7 @@
 
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -54,14 +55,15 @@ nav ul {
 
 .hero h1 {
   font-weight: 800;
-  font-size: 108px;
-  line-height: 102px;
+  font-size: 90px;
+  line-height: 95px;
 }
 
 .hero p {
   font-weight: 600;
   color: var(--gray);
   max-width: 400px;
+  padding: 2px;
 }
 
 .hero-btn {
@@ -87,4 +89,8 @@ nav ul {
 .brand-icons {
   display: flex;
   gap: 16px;
+}
+
+.hero-image {
+  margin-top: -20px;
 }
