@@ -1,3 +1,4 @@
 import logo from "./logo.png";
+import girl from "./girl.svg";
 
-export { logo };
+export { logo, girl };
