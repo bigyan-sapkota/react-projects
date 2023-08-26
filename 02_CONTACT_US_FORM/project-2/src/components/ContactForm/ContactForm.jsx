@@ -36,15 +36,15 @@ const ContactForm = () => {
 
         <form onSubmit={onSubmit}>
           <div className={styles.form_control}>
-            <label htmlFor="name">Name</label>
+            <label>Name</label>
             <input type="text" name="name" />
           </div>
           <div className={styles.form_control}>
-            <label htmlFor="email">Email</label>
+            <label>Email</label>
             <input type="email" name="email" />
           </div>
           <div className={styles.form_control}>
-            <label htmlFor="text">Text</label>
+            <label>Text</label>
             <textarea name="text" rows="8" />
           </div>
           <div
