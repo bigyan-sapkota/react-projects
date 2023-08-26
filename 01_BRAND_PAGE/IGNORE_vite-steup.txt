@@ -1,5 +1,0 @@
-1)npm create vite@latest
-2)cd ./project_name: npm i
-
-TO RUN: 
-npm run dev
