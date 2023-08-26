@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./ContactForm.module.css";
 import Button from "../Button/Button";
 import { MdMessage } from "react-icons/md";
@@ -7,6 +7,17 @@ import { HiMail } from "react-icons/hi";
 import { girl } from "../../assets";
 
 const ContactForm = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [text, setText] = useState("");
+
+  const onSubmit = (event) => {
+    event.preventDefault();
+    setName(event.target[0].value);
+    setEmail(event.target[1].value);
+    setText(event.target[2].value);
+  };
+
   return (
     <section className={`${styles.container}`}>
       <div className={styles.contact_form}>
@@ -23,7 +34,7 @@ const ContactForm = () => {
           icon={<HiMail fontSize="24px" />}
         />
 
-        <form action="">
+        <form onSubmit={onSubmit}>
           <div className={styles.form_control}>
             <label htmlFor="name">Name</label>
             <input type="text" name="name" />
@@ -44,6 +55,8 @@ const ContactForm = () => {
           >
             <Button text={"SUBMIT BUTTON"} />
           </div>
+
+          <div>{name + email + text}</div>
         </form>
       </div>
       <div className={styles.contact_image}>
