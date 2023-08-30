@@ -21,3 +21,14 @@ export const Button = styled.button`
     transition: 0.3s background ease-in;
   }
 `;
+
+export const OutlineButton = styled(Button)`
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  &:hover {
+    background-color: #000;
+    border: 1px solid black;
+    color: #fff;
+  }
+`;
