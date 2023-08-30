@@ -45,3 +45,10 @@ body {
 .search input:focus {
   outline: none;
 }
+
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding-bottom: 40px;
+}
