@@ -5,4 +5,10 @@ button {
   color: white;
   border-radius: 5px;
   padding: 6px 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #ffa;
+  background-color: #ff3333;
 }
