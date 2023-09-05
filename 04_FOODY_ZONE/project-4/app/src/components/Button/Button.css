@@ -1,6 +1,6 @@
 button {
   font-family: inherit;
-  border: none;
+  border: 1px solid #ff4343;
   background-color: #ff4343;
   color: white;
   border-radius: 5px;
@@ -9,6 +9,15 @@ button {
 }
 
 button:hover {
-  color: #ffa;
-  background-color: #ff3333;
+  border-color: #ff3333;
+  background-color: white;
+  color: #ff3333;
+}
+
+.isSelected {
+  color: white;
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom-color: #ff3333;
+  border-bottom-width: 4px;
 }

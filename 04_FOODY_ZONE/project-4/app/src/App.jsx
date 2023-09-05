@@ -56,6 +56,25 @@ const App = () => {
     setSelectedButton(type);
   };
 
+  const FilteredBtns = [
+    {
+      name: "all",
+      type: "All",
+    },
+    {
+      name: "breakfast",
+      type: "Breakfast",
+    },
+    {
+      name: "lunch",
+      type: "Lunch",
+    },
+    {
+      name: "dinner",
+      type: "Dinner",
+    },
+  ];
+
   if (error) return <div>{error}</div>;
   if (loading) return <div>Loading...</div>;
 
@@ -77,10 +96,14 @@ const App = () => {
         </div>
 
         <div className="filterContainer">
-          <Button onClick={() => filterFood("all")} text={"All"} />
-          <Button onClick={() => filterFood("breakfast")} text={"Breakfast"} />
-          <Button onClick={() => filterFood("lunch")} text={"Lunch"} />
-          <Button onClick={() => filterFood("dinner")} text={"Dinner"} />
+          {FilteredBtns.map((value, index) => (
+            <Button
+              isSelected={selectedButton === value.name}
+              key={index}
+              handleClick={() => filterFood(value.name)}
+              text={value.type}
+            />
+          ))}
         </div>
       </div>
       <SearchResult data={filteredData} />

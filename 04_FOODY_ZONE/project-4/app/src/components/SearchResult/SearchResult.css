@@ -4,9 +4,6 @@
   background-size: cover;
 }
 
-.foodCards {
-}
-
 .foodCard {
   display: flex;
   padding: 10px;
