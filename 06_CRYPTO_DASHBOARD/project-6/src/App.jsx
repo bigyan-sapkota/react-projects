@@ -1,9 +1,13 @@
+import DashboardLayout from "./components/DashboardLayout";
 import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {
   return (
     <>
-      <Dashboard />
+      <DashboardLayout title="Dashboard">
+        <div>How are you?</div>
+      </DashboardLayout>
+      ;
     </>
   );
 }

@@ -1,12 +1,5 @@
-import React from "react";
-import SideNav from "../../components/SideNav";
-
 const Dashboard = () => {
-  return (
-    <div>
-      <SideNav />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Dashboard;
