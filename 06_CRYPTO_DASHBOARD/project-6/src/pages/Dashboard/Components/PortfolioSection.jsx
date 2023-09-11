@@ -1,11 +1,15 @@
-import { HStack, Stack } from "@chakra-ui/react";
+import { HStack, Icon, Stack, Text } from "@chakra-ui/react";
 import React from "react";
+import { AiOutlineInfoCircle } from "react-icons/ai";
 
 const PortfolioSection = () => {
   return (
-    <HStack>
+    <HStack bg="white" borderRadius="xl">
       <Stack>
-        <HStack>Total Portfolio Value</HStack>
+        <HStack>
+          <Text>Total Portfolio Value</Text>
+          <Icon as={AiOutlineInfoCircle} />
+        </HStack>
       </Stack>
     </HStack>
   );
