@@ -19,6 +19,7 @@ const TopNav = ({ title, onOpen }) => {
     <Box px="4" bg="white">
       <HStack maxW="60rem" h="16" justify="space-between" mx="auto">
         <Icon
+          cursor="pointer"
           as={HiMiniBars3BottomLeft}
           onClick={onOpen}
           display={{

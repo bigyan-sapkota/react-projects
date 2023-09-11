@@ -38,6 +38,7 @@ const SideNav = () => {
         <Box mt="6" mx="3">
           {navLinks.map((nav, i) => (
             <HStack
+              cursor="pointer"
               borderRadius="10px"
               key={i}
               mx="3"
